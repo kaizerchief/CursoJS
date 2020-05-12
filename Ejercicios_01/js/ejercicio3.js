@@ -10,13 +10,17 @@ while(num1 == false){
     n1 = parseInt(prompt("Ingrese el valor incial ", 0));
     if(isNaN(n1) == false){
         num1 = true;
+    }else{
+        alert("ERROR! Debe ser un valor numerico!");
     }              
 }
 while(num2 == false){
      n2 = parseInt(prompt("Ingrese el valor final ", 0));
     if(isNaN(n2) == false && n2 >= n1){//SE AGREGA UNA CONDICION PARA ASEGURAR QUE EL SEGUNDO VALOR SEA MAYOR AL PRIMERO.
          num2 = true;
-     }
+     }else{
+        alert("ERROR! Debe ser un valor numerico!");
+    }
  }
 
 console.log("El rango de "+n1 +" a "+n2 +" es:");
