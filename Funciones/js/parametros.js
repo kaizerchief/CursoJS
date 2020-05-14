@@ -30,3 +30,22 @@ function calculadora(n1, n2, mostrar = false) {
   calculadora(2, 2, true);
 */
 //FUNCIONES DENTRO DE OTRAS
+function porConsola(n1, n2){
+    console.log(n1+n2);
+}
+
+function porAlert(n1, n2){
+    alert(n1+n2);
+}
+
+function principal(opcion){
+    if(opcion == 1){
+        porConsola(n1, n2);
+    }else if(opcion == 2){
+        porAlert(n1, n2);
+    }else{
+        console.log("ERROR!, opcion incorrecta");
+    }
+}
+
+principal(2);
