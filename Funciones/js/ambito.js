@@ -10,3 +10,4 @@ function holaMundo(texto){
 var nuumero = 12;
 var texto = "Hola mundo, soy una variable global"; //VARIABLE GLOBAL
 holaMundo(texto);
+console.log(hola_mundo);//DARA ERROR YA QUE LA VARIABLE ES LOCAL DE LA FUNCION Y POR ENDE NO ACCESIBLE.
