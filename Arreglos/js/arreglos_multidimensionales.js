@@ -67,4 +67,4 @@ console.log(busqueda);
 //BUSQUEDA NUMERICA
 var numeros = [10, 20, 30, 80, 7];
 var busqueda2 = numeros.some(valor => valor < 10);//RETORNA UN VALOR BOOLEANO
-console.log(busqueda2);//IMPRESIO DEL VALOR BOOLEANO DE LA FUNCION DE FLECHA
+console.log(busqueda2);//IMPRESION DEL VALOR BOOLEANO DE LA FUNCION DE FLECHA
