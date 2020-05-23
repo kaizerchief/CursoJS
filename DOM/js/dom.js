@@ -40,3 +40,16 @@ seccion.append(hr);
 console.log(contenido);
 
 //CONSEGUIR ELEMENTOS POR SU CLASE
+var divRojo = document.getElementsByClassName("rojo");
+var divAmarillo = document.getElementsByClassName("amarillo");
+/*
+SE DEBE CAMBIAR UNO A UNO USANDO LA POSICION DEL DIV DENTRO DEL ARRAY, DADO QUE
+UNA PROPIEDAD NO PUEDE SER ALTERADA EN TODOS SUS ELEMENTOS SIN USAR UN BUCLE.
+*/
+divRojo[0].style.background = "red";
+divAmarillo[0].style.background = "yellow";
+
+//QUERY SELECTOR
+//EL QUERY SELECTO RECOGE UN SOLO VALOR, NO CREA ARRAYS
+var id = document.querySelector("#encabezado");
+
