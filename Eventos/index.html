@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">       
+        <script type="text/javascript" src="js/eventos_teclado.js"></script> <!--GRACIAS AL LOAD PODEMOS CARGAR EL SCRIPT EN EL HEAD -->
     </head>
     <body>
         <h1>Eventos en javascript</h1>
@@ -13,12 +14,10 @@
         </P>
         <hr>
         <p>
-            <button id="boton" onclick="cambiarColor();">Presioname, SOY EL ONCLICK</button>
+            <form>
+                <input type="text" name="nombre" id="campo_nombre">
+            </form>
+            <button id="boton">Presioname</button>
         </p>
-        <p>
-            <button id="boton1">Presioname, SOY EL ADDEVENTLISTENER</button>
-        </p>
-
-        <script type="text/javascript" src="js/eventos.js"></script>
     </body>
 </html>
