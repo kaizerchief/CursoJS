@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">       
+        <title>Ejercicios DOM, Eventos y Funciones en JavaScript</title>
+        <script type="text/javascript" src="js/ejercicio-3.js"></script> <!--GRACIAS AL LOAD PODEMOS CARGAR EL SCRIPT EN EL HEAD -->
+        <style>
+            .box{
+                width: 200px;
+                height: 250px;
+                float: left;
+                margin: 20px;
+            }
+            .dashed{
+                border: 3px dashed black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ejercicios DOM, Eventos  y Funciones en javascript</h1>
+        <!-- Condiciones del Ejercicio:
+            1.- Formulario con campos: Nombre, Apellidos y Edad
+            2.- Boton de enviar el Formulario: Eventos Submit
+            3.- Mostrar datos por Pantalla
+        -->
+        <!-- Creacion del Formulario-->
+        <div class="box">
+            <form action="" method="POST" id="formulario" onsubmit="return false;">
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label for="apellido">Apellidos</label><br>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+                <label for="edad">Edad</label><br>
+                <input type="number" name="edad" id="edad">
+                <hr>
+                <input type="submit" value ="Enviar" id="submit">
+            </form>
+        </div>
+        <div class="box dashed">
+            <h1>Informacion Capturada</h1>
+            <hr>
+            <p id="p_nombre">Nombre:
+                <span></span>
+            </p>
+            <p id="p_apellido">Apellido:
+                <span></span>
+            </p>
+            <p id="p_edad">Edad:
+                <span></span>
+            </p>
+            <hr>
+        </div>
+    </body>
+</html>
